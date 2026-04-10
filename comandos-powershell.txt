@@ -1,0 +1,5 @@
+schtasks /Create /TN "CloudSEK-IRIS LivePoll" /SC ONSTART /RU "SYSTEM" /RL HIGHEST /TR "powershell.exe -ExecutionPolicy Bypass -File C:\CloudSEK\CloudSEK-Final.ps1 -Mode LivePoll" /F
+
+schtasks /Run /TN "CloudSEK-IRIS LivePoll"
+
+schtasks /Query /TN "CloudSEK-IRIS LivePoll" /V /FO LIST
