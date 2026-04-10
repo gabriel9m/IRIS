@@ -1,0 +1,36 @@
+{
+    "RootPath":  "C:\\CloudSEK",
+    "CloudSEK":  {
+                     "BaseUrl":  "https://api.cloudsek.com",
+                     "ApiKey":  "<CloudSEK-API-KEY>",
+                     "Limit":  100,
+                     "Page":  1,
+                     "IntervalSeconds":  300,
+                     "ModuleName":  [
+
+                                    ]
+                 },
+    "IRIS":  {
+                 "BaseUrl":  "https://<IRIS-URL>",
+                 "CreateUri":  "https://<IRIS-URL>/alerts/add?cid=1",
+                 "ApiKey":  "<IRIS-API-KEY>",
+                 "TimeoutSec":  60,
+                 "SkipTlsValidation":  true,
+                 "AlertCustomerId":  1,
+                 "AlertClassificationId":  1,
+                 "SeverityMap":  {
+                                     "P0":  1,
+                                     "P1":  1,
+                                     "P2":  4,
+                                     "Default":  2
+                                 },
+                 "StatusMap":  {
+                                   "open":  1,
+                                   "acknowledged":  1,
+                                   "in_progress":  1,
+                                   "reopened":  1,
+                                   "closed":  1,
+                                   "default":  1
+                               }
+             }
+}
